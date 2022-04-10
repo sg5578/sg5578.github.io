@@ -25,7 +25,7 @@ jQuery(document).ready(function () {
             jQuery('html, body').animate({scrollTop: jQuery(this.hash).offset().top - 54}, 1500);
         } else
         {
-            jQuery('html, body').animate({scrollTop: jQuery(this.hash).offset().top}, 1500);
+            jQuery('html, body').animate({scrollTop: jQuery(this.hash).offset().top - 54}, 1500);
         }
         return false;
     });
