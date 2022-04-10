@@ -131,6 +131,9 @@ body a:hover
 {    
     position: relative;
     z-index: 1;
+    background-color: var(--clr-primary);
+    padding-bottom: 170px;
+    min-height: calc(80vh - 170px);
 }
 
 .section-num
@@ -141,7 +144,7 @@ body a:hover
 
 .section-title-holder
 {
-    background-color: var(--clr-text);
+    background-color: var(--clr-primary);
     width: 370px;
     height: 370px;    
     z-index: 2;
@@ -302,6 +305,60 @@ h1.big-title
 }
 
 /* END HOME SECTION */
+
+
+/* START ABOUT ME SECTION */
+
+.about-page
+{
+    padding-bottom: 170px;
+    min-height: calc(100vh - 170px);
+    z-index: 10;
+}
+
+.section-header
+{
+    color: var(--clr-yellow);
+    font-size: var(--fs-500);
+    align-self: center;
+    text-align: center;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 2;
+    gap: 10%;
+    grid-auto-rows: minmax(100px, auto);
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 50px;
+}
+
+.about-page .portrait
+{
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    grid-column: 1;
+    border: 1px solid var(--clr-text);
+    border-radius: 40px;
+}
+
+.section-paragraph
+{
+    color: var(--clr-text);
+    font-size: var(--fs-400);
+    margin-left: 50%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%;
+    grid-column: 2;
+    margin-top: 30%;
+}
+
+/* END ABOUT ME SECTION */
 
 
 
